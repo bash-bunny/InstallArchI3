@@ -310,6 +310,8 @@ bindsym $modkey+w exec --no-startup-id firefox
 
 bindsym $modkey+e exec $term -e ranger
 
+bindsym $modkey+u exec $term -e glances
+
 #bindsym $modkey+Shift+Return exec --no-startup-id thunar
 bindsym $modkey+backslash exec --no-startup-id thunar
 
