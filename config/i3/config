@@ -418,8 +418,9 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 
 # Autostart apps
 exec --no-startup-id picom --config $HOME/.config/bspwm/picom.conf &
-#exec --no-startup-id feh --bg-fill --randomize ~/backgrounds/* &
-exec --no-startup-id feh --bg-fill  ~/backgrounds/DRAMAtical.Murder.full.Noiz.jpg &
+exec --no-startup-id feh --bg-fill --randomize ~/backgrounds/* &
+#exec --no-startup-id feh --bg-fill  ~/backgrounds/DRAMAtical.Murder.full.Noiz.jpg &
 exec --no-startup-id unclutter &
+exec --no-startup-id redshift &
 exec --no-startup-id nm-applet &
 exec --no-startup-id cbatticon &
