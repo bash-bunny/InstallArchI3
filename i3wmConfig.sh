@@ -33,7 +33,6 @@ cp .xinitrc ~/.
 echo "Copying config files to .config folder..."
 
 cp -r config/i3 ~/.config/
-cp -r config/polybar ~/.config/
 cp -r config/Thunar ~/.config/
 cp -r config/fish ~/.config/
 cp -r config/i3blocks ~/.config/
