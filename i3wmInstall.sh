@@ -122,6 +122,8 @@ sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed qbittorrent
 sudo pacman -S --noconfirm --needed lynx
 sudo pacman -S --noconfirm --needed tor
+sudo pacman -S --noconfirm --needed torbrowser-launcher
+sudo pacman -S --noconfirm --needed nyx
 sudo pacman -S --noconfirm --needed thunderbird
 sudo pacman -S --noconfirm --needed pidgin # For social media
 
@@ -296,7 +298,6 @@ yay -S --noconfirm --needed xtitle
 yay -S --noconfirm --needed polybar
 yay -S --noconfirm --needed urxvt-resize-font-git
 yay -S --noconfirm --needed i3exit
-yay -S --noconfirm --needed tor-browser
 
 echo ""
 
