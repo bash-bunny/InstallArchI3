@@ -295,7 +295,6 @@ echo "AUR - DESKTOP SPECIFIC APPLICATIONS "
 yay -S --noconfirm --needed gtk2-perl
 yay -S --noconfirm --needed perl-linux-desktopfiles
 yay -S --noconfirm --needed xtitle
-yay -S --noconfirm --needed polybar
 yay -S --noconfirm --needed urxvt-resize-font-git
 yay -S --noconfirm --needed i3exit
 
