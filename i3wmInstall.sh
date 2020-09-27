@@ -246,7 +246,6 @@ echo "Setting Display Manager"
 
 sudo pacman -S i3-gaps i3blocks --noconfirm --needed
 yay -S --noconfirm --needed ly-git
-sudo systemctl disable ligthdm
 sudo systemctl enable ly.service
 sudo systemctl disable getty@tty2.service
 
