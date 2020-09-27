@@ -36,7 +36,6 @@ cp -r config/i3 ~/.config/
 cp -r config/Thunar ~/.config/
 cp -r config/fish ~/.config/
 cp -r config/i3blocks ~/.config/
-cp -r config/termite ~/.config/
 
 echo "Copying wallpapers"
 
@@ -56,14 +55,8 @@ cp -r backgrounds/* ~/backgrounds/
 
 echo "Setting permissions..."
 
-cd ~/.config/bspwm/
-chmod +x bspwmrc autostart.sh
-chmod +x scripts/picom-toggle.sh
-chmod +x scripts/rofi-usb-mount.sh
-cd ~/.config/polybar
-chmod +x launch.sh
-cd ~/.config/polybar/scripts
-chmod +x get_ip.sh vpn_status.sh connected.sh
+chmod +x ~/.config/i3/bin/*
+chmod +x ~/.config/i3blocks/blocks/*
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
