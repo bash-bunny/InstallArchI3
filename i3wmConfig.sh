@@ -114,7 +114,6 @@ sudo pacman -S --noconfirm --needed mimikatz
 sudo pacman -S --noconfirm --needed onesixtyone
 # For wifi
 sudo pacman -S --noconfirm --needed wifiphisher-git wifijammer-git
-sudo pacman -S --noconfirm --needed routersploit-git
 
 sleep 1
 
