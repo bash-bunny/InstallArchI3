@@ -90,7 +90,7 @@ sudo pacman -Syy --noconfirm --needed
 sleep 1
 
 echo "Installing tools with archstrike"
-sudo pacman -S --noconfirm --needed dirb wfuzz dirbuster
+sudo pacman -S --noconfirm --needed wfuzz dirbuster
 sudo pacman -S --noconfirm --needed burpsuite
 sudo pacman -S --noconfirm --needed crunch cupp-git cewl
 sudo pacman -S --noconfirm --needed netdiscover
