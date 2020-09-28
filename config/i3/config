@@ -271,8 +271,8 @@ bar {
     status_command i3blocks
     position top
     font pango:Hermit 10
-    output eDP1
-    tray_output eDP1
+    # output eDP1
+    # tray_output eDP1
 
     colors {
         background #151515
