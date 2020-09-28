@@ -66,7 +66,7 @@ sleep 1
 echo "Setting some configuration..."
 sudo updatedb # Update mlocate db
 # sudo localectl set-x11-keymap es # Set the keyboard map
-sudo localectl set-x11-keymap colemak
+# sudo localectl set-x11-keymap colemak
 # Config pacman
 sudo cp mirrorupgrade.hook /etc/pacman.d/hooks/
 sudo cp pacman.conf /etc/
