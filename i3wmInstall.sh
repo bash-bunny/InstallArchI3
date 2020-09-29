@@ -121,7 +121,7 @@ sudo pacman -S --noconfirm --needed chromium
 sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed qbittorrent
 sudo pacman -S --noconfirm --needed lynx
-sudo pacman -S --noconfirm --needed tor
+sudo pacman -S --noconfirm --needed tor torsocks
 sudo pacman -S --noconfirm --needed torbrowser-launcher
 sudo pacman -S --noconfirm --needed nyx
 sudo pacman -S --noconfirm --needed thunderbird
