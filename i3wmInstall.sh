@@ -190,6 +190,7 @@ sudo pacman -S --noconfirm --needed rdesktop
 sudo pacman -S --noconfirm --needed calcurse
 sudo pacman -S --noconfirm --needed sysstat
 sudo pacman -S --noconfirm --needed task
+sudo pacman -S --noconfirm --needed keepassxc
 
 ###############################################################################################
 
