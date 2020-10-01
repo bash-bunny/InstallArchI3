@@ -76,10 +76,8 @@ sudo pacman -Syy --noconfirm --needed
 
 sudo pacman-key --init
 sudo dirmngr < /dev/null
-sudo wget https://archstrike.org/keyfile.asc
-sudo pacman-key --add keyfile.asc
+sudo pacman-key -r 9D5F1C051D146843CDA4858BDE64825E7CBC0D51
 sudo pacman-key --lsign-key 9D5F1C051D146843CDA4858BDE64825E7CBC0D51
-sudo rm keyfile.asc
 
 sudo pacman -S --noconfirm archstrike-keyring
 sudo pacman -S --noconfirm archstrike-mirrorlist
