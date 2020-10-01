@@ -244,12 +244,10 @@ echo ""
 echo "Setting Display Manager"
 
 
-sudo pacman -S i3-gaps i3blocks --noconfirm --needed
-yay -S --noconfirm --needed ly-git
+sudo pacman -S i3-gaps i3blocks --noconfirm --needed                  # i3-gaps is a fork of i3wm, a tiling window manager for X11
+yay -S --noconfirm --needed ly-git                                    # Ly is a lightweight TUI (ncurses-like) display manager for Linux and BSD.
 sudo systemctl enable ly.service
 sudo systemctl disable getty@tty2.service
-
-
 
 echo ""
 
@@ -265,16 +263,16 @@ sudo pacman -S xfce4-terminal --noconfirm --needed
 
 echo "Installing category System"
 
-sudo pacman -S arandr --noconfirm --needed
+sudo pacman -S arandr --noconfirm --needed                            # arandr para la configuración de la resolución de video
 sudo pacman -S awesome-terminal-fonts --noconfirm --needed
-sudo pacman -S picom  --noconfirm --needed
-sudo pacman -S dmenu  --noconfirm --needed
-sudo pacman -S feh --noconfirm --needed
-sudo pacman -S gtop --noconfirm --needed
-sudo pacman -S imagemagick --noconfirm --needed
-sudo pacman -S lxappearance-gtk3 --noconfirm --needed
-sudo pacman -S lxrandr --noconfirm --needed
-sudo pacman -S playerctl --noconfirm --needed
+sudo pacman -S picom  --noconfirm --needed                            # Para la transparencia de la shell
+sudo pacman -S dmenu  --noconfirm --needed                            # Para ejecutar o lanzar programas
+sudo pacman -S feh --noconfirm --needed                               # feh es un visor de imágenes ligero dirigido principalmente a usuarios de interfaces de línea de comandos
+sudo pacman -S gtop --noconfirm --needed                              # Programa de monitorización del sistema por la terminal
+sudo pacman -S imagemagick --noconfirm --needed                       # ImageMagick es un conjunto de utilidades de código abierto para mostrar, manipular y convertir imágenes, capaz de leer y escribir más de 200 formatos
+sudo pacman -S lxappearance-gtk3 --noconfirm --needed                 # Theme switcher
+sudo pacman -S lxrandr --noconfirm --needed                           # LXRandR is the standard screen manager of LXDE
+sudo pacman -S playerctl --noconfirm --needed                         # Playerctl es una utilidad de línea de comandos y biblioteca para controlar reproductores multimedia que implementan la especificación de interfaz MPRIS D-Bus
 sudo pacman -S thunar --noconfirm --needed
 sudo pacman -S w3m  --noconfirm --needed
 sudo pacman -S xfce4-appfinder --noconfirm --needed
@@ -293,7 +291,6 @@ echo "AUR - DESKTOP SPECIFIC APPLICATIONS "
 yay -S --noconfirm --needed gtk2-perl
 yay -S --noconfirm --needed perl-linux-desktopfiles
 yay -S --noconfirm --needed xtitle
-yay -S --noconfirm --needed urxvt-resize-font-git
 yay -S --noconfirm --needed i3exit
 
 echo ""
@@ -306,15 +303,15 @@ echo "Installing fonts and themes from Arch Linux repo"
 
 sudo pacman -S adobe-source-sans-pro-fonts --noconfirm --needed
 sudo pacman -S cantarell-fonts --noconfirm --needed
-sudo pacman -S noto-fonts --noconfirm --needed
+sudo pacman -S noto-fonts --noconfirm --needed                         # Familia de fuentes noto, fue desarrollada por google
 sudo pacman -S ttf-bitstream-vera --noconfirm --needed
 sudo pacman -S ttf-dejavu --noconfirm --needed
-sudo pacman -S ttf-droid --noconfirm --needed
+sudo pacman -S ttf-droid --noconfirm --needed                          # Conjunto de fuentes de propósito general liberadas por google como parte de android
 sudo pacman -S ttf-hack --noconfirm --needed
 sudo pacman -S ttf-inconsolata --noconfirm --needed
 sudo pacman -S ttf-liberation --noconfirm --needed
 sudo pacman -S ttf-roboto --noconfirm --needed
-sudo pacman -S ttf-ubuntu-font-family --noconfirm --needed
+sudo pacman -S ttf-ubuntu-font-family --noconfirm --needed             # Familia de fuentes de ubuntu
 sudo pacman -S tamsyn-font --noconfirm --needed
 sudo pacman -S breeze --noconfirm --needed
 sudo pacman -S otf-hermit --noconfirm --needed
@@ -349,7 +346,7 @@ sudo pacman -S --noconfirm --needed metasploit
 sudo pacman -S --noconfirm --needed masscan
 sudo pacman -S --noconfirm --needed zaproxy
 sudo pacman -S --noconfirm --needed smbclient
-sudo pacman -S --noconfirm --needed kxmlrpcclient
+sudo pacman -S --noconfirm --needed kxmlrpcclient                           # XML-RPC client library for KDE
 sudo pacman -S --noconfirm --needed radare2
 sudo pacman -S --noconfirm --needed parallel
 sudo pacman -S --noconfirm --needed mysql
@@ -357,15 +354,15 @@ sudo pacman -S --noconfirm --needed perl-image-exiftool
 #For windows
 sudo pacman -S --noconfirm --needed nbtscan
 # For Wifi
-sudo pacman -S --noconfirm --needed wpscan
-sudo pacman -S --noconfirm --needed reaver bully
-sudo pacman -S --noconfirm --needed macchanger
-sudo pacman -S --noconfirm --needed hcxdumptool hcxtools
+sudo pacman -S --noconfirm --needed wpscan 
+sudo pacman -S --noconfirm --needed reaver bully                            # Reaver-WPS desempeña un ataque de fuerza bruta contra el número de pin de WiFi de un punto de acceso. Romper claves WPA por la vulnerabilidad del WPS mediante Bully.
+sudo pacman -S --noconfirm --needed macchanger                              # Herramienta para cambiar la mac de la tarjeta de red
+sudo pacman -S --noconfirm --needed hcxdumptool hcxtools                    # Pequeña herramienta para capturar paquetes de dispositivos WLAN
 
 # AUR Repo
-yay -S --noconfirm --needed exploit-db-git
-yay -S --noconfirm --needed cutycapt-qt5-git
-yay -S --noconfirm --needed routersploit-git
+yay -S --noconfirm --needed exploit-db-git                                  # The Exploit Database Git Repository
+yay -S --noconfirm --needed cutycapt-qt5-git                                # Una utilidad de línea de comandos basada en Qt y WebKit que captura la representación de WebKit de una página web.
+yay -S --noconfirm --needed routersploit-git                                # The RouterSploit Framework is an open-source exploitation framework dedicated to embedded devices.
 
 echo ""
 
@@ -386,5 +383,5 @@ sudo pacman -S --noconfirm --needed ufw
 sudo pacman -S --noconfirm --needed gnupg
 
 # Eyes
-sudo pacman -S --noconfirm --needed redshift
+sudo pacman -S --noconfirm --needed redshift                                # Ajusta la temperatura del color de tu pantalla
 
