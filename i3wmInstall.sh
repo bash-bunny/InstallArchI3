@@ -273,8 +273,6 @@ sudo pacman -S imagemagick --noconfirm --needed                       # ImageMag
 sudo pacman -S lxappearance-gtk3 --noconfirm --needed                 # Theme switcher
 sudo pacman -S lxrandr --noconfirm --needed                           # LXRandR is the standard screen manager of LXDE
 sudo pacman -S playerctl --noconfirm --needed                         # Playerctl es una utilidad de línea de comandos y biblioteca para controlar reproductores multimedia que implementan la especificación de interfaz MPRIS D-Bus
-sudo pacman -S thunar --noconfirm --needed
-sudo pacman -S w3m  --noconfirm --needed
 sudo pacman -S xfce4-appfinder --noconfirm --needed
 sudo pacman -S xfce4-power-manager --noconfirm --needed
 sudo pacman -S xfce4-settings --noconfirm --needed
