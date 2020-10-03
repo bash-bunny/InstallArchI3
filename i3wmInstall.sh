@@ -188,6 +188,7 @@ sudo pacman -S --noconfirm --needed calcurse                # calcurse is a cale
 sudo pacman -S --noconfirm --needed sysstat                 # sysstat es una colección de herramientas de monitoreo de rendimiento para Linux
 sudo pacman -S --noconfirm --needed task                    # Gestor de tareas
 sudo pacman -S --noconfirm --needed keepassxc               # Gestor de contraseñas
+sudo pacman -S --noconfirm --needed samba                   # Samba
 
 ###############################################################################################
 
