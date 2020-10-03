@@ -11,8 +11,10 @@ Change to directory: ``` cd InstallArchI3 ```
 
 Change file permissions: ``` chmod +x i3wmInstall.sh i3wmConfig.sh ```
 
-Launch bspwmInstall, this will download all the necessary packages: ``` ./i3wmInstall.sh ```
+Launch i3wmInstall.sh, this will download all the necessary packages: ``` ./i3wmInstall.sh ```
 
-Launch configBspwm, this will finish with the configuration files: ``` ./i3wmConfig.sh ```
+Launch i3wmConfig.sh, this will finish with the configuration files: ``` ./i3wmConfig.sh ```
 
-Or you can launch all at one time with (first the installer all the neccesary packages): ``` ./i3wmInstall.sh && ./i3wmConfig.sh ``` 
+Launch InstallArchStrike.sh, this will install the Archstrike repo, and install additional packages: ``` ./InstallArchStrike.sh ```
+
+Or you can launch all at one time with (first the installer all the neccesary packages): ``` ./i3wmInstall.sh && ./i3wmConfig.sh && ./InstallArchStrike.sh ``` 
