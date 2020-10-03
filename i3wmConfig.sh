@@ -22,6 +22,11 @@ then
     sudo mkdir -p /etc/pacman.d/hooks
 fi
 
+if [ ! -d "/etc/samba/" ]
+then
+    sudo mkdir -p /etc/samba/
+fi
+
 echo "Copying Files to HOME ..."
 
 cp .bashrc ~/.
@@ -70,6 +75,9 @@ sudo updatedb # Update mlocate db
 # Config pacman
 sudo cp mirrorupgrade.hook /etc/pacman.d/hooks/
 sudo cp pacman.conf /etc/
+
+# Config samba
+sudo cp smb.conf /etc/samba/
 
 sleep 1
 
