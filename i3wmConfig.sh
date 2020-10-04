@@ -112,4 +112,5 @@ echo "sudo -- sh -c 'ln -sf /home/user/.bashrc /root/.bashrc'"
 echo "sudo -- sh -c 'ln -sf /home/user/.config/fish /root/.config/'"
 
 echo "Remove InstallArch Directory"
+echo "Remember set up firefox--> about:config --> ui.context_menus.after_mouseup --> true"
 echo "Reboot, open vim and execute :PluginInstall"
