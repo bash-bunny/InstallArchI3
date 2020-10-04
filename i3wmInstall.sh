@@ -76,6 +76,9 @@ sudo pacman -S --noconfirm --needed nss-mdns
 #shares on a linux
 sudo pacman -S --noconfirm --needed gvfs-smb
 
+# Connect Android device
+sudo pacman -S --noconfirm --needed mtpfs gvfs-mtp gvfs-gphoto2
+
 #first part
 sudo sed -i 's/files mymachines myhostname/files mymachines/g' /etc/nsswitch.conf
 #last part
