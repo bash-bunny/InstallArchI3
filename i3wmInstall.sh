@@ -365,6 +365,7 @@ sudo pacman -S --noconfirm --needed hcxdumptool hcxtools                    # Pe
 yay -S --noconfirm --needed exploit-db-git                                  # The Exploit Database Git Repository
 yay -S --noconfirm --needed cutycapt-qt5-git                                # Una utilidad de línea de comandos basada en Qt y WebKit que captura la representación de WebKit de una página web.
 yay -S --noconfirm --needed routersploit-git                                # The RouterSploit Framework is an open-source exploitation framework dedicated to embedded devices.
+yay -S --noconfirm --needed aquatone                                        # Para realizar capturas de pantalla
 
 echo ""
 
