@@ -1,0 +1,6 @@
+# EXTERN_LINK = under cursor
+# EXTERN      = current page
+
+# yank url to clipboard
+keymap yy     EXTERN        'printf %s | xclip -sel clip'
+keymap YY     EXTERN_LINK   'printf %s | xclip -sel clip'
