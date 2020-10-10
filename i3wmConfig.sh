@@ -17,6 +17,11 @@ then
     mkdir -p ~/.vim/bundle
 fi
 
+if [ ! -d "~/.w3m" ]
+then
+    mkdir -p ~/.w3m
+fi
+
 if [ ! -d "/etc/pacman.d/hooks" ]
 then
     sudo mkdir -p /etc/pacman.d/hooks
@@ -34,6 +39,7 @@ cp .tmux.conf ~/.
 cp vimrc ~/.vim
 cp .Xresources ~/.
 cp .xinitrc ~/.
+cp keymap ~/.w3m
 
 echo "Copying config files to .config folder..."
 
