@@ -123,7 +123,7 @@ echo "Installing category Internet"
 sudo pacman -S --noconfirm --needed chromium
 sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed qbittorrent
-sudo pacman -S --noconfirm --needed lynx                    # Lynx es un navegador web y cliente de gopher en modo texto
+sudo pacman -S --noconfirm --needed lynx w3m                   # Lynx y w3m son navegadores web y cliente de gopher en modo texto
 sudo pacman -S --noconfirm --needed tor torsocks
 sudo pacman -S --noconfirm --needed torbrowser-launcher
 sudo pacman -S --noconfirm --needed nyx                     # Nyx is a command-line monitor for Tor. With this you can get detailed real-time information about your relay such as bandwidth usage, connections, logs, and much more.
