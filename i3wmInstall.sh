@@ -360,6 +360,7 @@ sudo pacman -S --noconfirm --needed wpscan
 sudo pacman -S --noconfirm --needed reaver bully                            # Reaver-WPS desempeña un ataque de fuerza bruta contra el número de pin de WiFi de un punto de acceso. Romper claves WPA por la vulnerabilidad del WPS mediante Bully.
 sudo pacman -S --noconfirm --needed macchanger                              # Herramienta para cambiar la mac de la tarjeta de red
 sudo pacman -S --noconfirm --needed hcxdumptool hcxtools                    # Pequeña herramienta para capturar paquetes de dispositivos WLAN
+sudo pacman -S --noconfirm --needed openbsd-netcat                          # Adaptacion de nc para arch
 
 # AUR Repo
 yay -S --noconfirm --needed exploit-db-git                                  # The Exploit Database Git Repository
@@ -387,4 +388,3 @@ sudo pacman -S --noconfirm --needed gnupg
 
 # Eyes
 sudo pacman -S --noconfirm --needed redshift                                # Ajusta la temperatura del color de tu pantalla
-
