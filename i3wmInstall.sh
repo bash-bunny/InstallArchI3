@@ -361,6 +361,7 @@ sudo pacman -S --noconfirm --needed reaver bully                            # Re
 sudo pacman -S --noconfirm --needed macchanger                              # Herramienta para cambiar la mac de la tarjeta de red
 sudo pacman -S --noconfirm --needed hcxdumptool hcxtools                    # Pequeña herramienta para capturar paquetes de dispositivos WLAN
 sudo pacman -S --noconfirm --needed openbsd-netcat                          # Adaptacion de nc para arch
+sudo pacman -S --noconfirm --needed testssl.sh                              # Para pasar tests de ssl 
 
 # AUR Repo
 yay -S --noconfirm --needed exploit-db-git                                  # The Exploit Database Git Repository
