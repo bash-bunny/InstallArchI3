@@ -233,6 +233,7 @@ yay -S --noconfirm --needed brave-nightly-bin                        # Navegador
 yay -S --noconfirm --needed gksu                                     # Permite iniciar aplicaciones gráficas desde consola con otro usuario pidiendo sus datos.
 yay -S --noconfirm --needed cherrytree                               # Programa de notas offline
 yay -S --noconfirm --needed remmina-plugin-rdesktop                  # Plugin para rdesktop de remina
+yay -S --noconfirm --needed wps-office                               # Alternativa a Microsoft Office y a Libre Office
 
 # these come always last
 
