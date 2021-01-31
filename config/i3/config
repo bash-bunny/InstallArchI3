@@ -220,10 +220,10 @@ bindsym $modkey+Shift+R restart
 
 # Exit mode
 bindsym $modkey+x mode "$mode_system"
-set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (x) shutdown
+set $mode_system System (l) lock, (s) suspend, (h) hibernate, (r) reboot, (x) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id  i3exit lock, mode "default"
-    bindsym e exec --no-startup-id  i3exit logout, mode "default"
+    #bindsym e exec --no-startup-id  i3exit logout, mode "default"
     bindsym s exec --no-startup-id  i3exit suspend, mode "default"
     bindsym h exec --no-startup-id  i3exit hibernate, mode "default"
     bindsym r exec --no-startup-id  i3exit reboot, mode "default"
@@ -255,7 +255,8 @@ mode "resize" {
 bindsym $modkey+d mode "qopen"
 mode "qopen" {
     bindsym f exec brave-browser-nightly, mode "default"
-    bindsym t exec thunderbird, mode "default"
+    #bindsym t exec thunderbird, mode "default"
+    bindsym t exec telegram-desktop, mode "default"
 
     bindsym a exec --no-startup-id cawbird; exec --no-startup-id telegram-desktop; exec --no-startup-id brave-browser-nightly; exec --no-startup-id thunderbird, mode "default"
 
@@ -413,18 +414,20 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym XF86AudioStop exec --no-startup-id playerctl stop
 
 #Brightness up
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
 
 #Brightness down
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 
 # Autostart apps
 exec --no-startup-id picom --config $HOME/.config/i3/picom.conf &
 exec --no-startup-id feh --bg-fill --randomize ~/backgrounds/* &
-#exec --no-startup-id feh --bg-fill  ~/backgrounds/DRAMAtical.Murder.full.Noiz.jpg &
 exec --no-startup-id unclutter &
-exec --no-startup-id redshift &
+#exec --no-startup-id redshift-gtk &
+exec --no-startup-id redshift -O 6500 &
 exec --no-startup-id nm-applet &
 exec --no-startup-id cbatticon &
-#Set keyboard layout to colemak
+# Set keyboard layout to colemak
 exec --no-startup-id setxkbmap us -variant colemak
+# Start Bluetooth manager
+exec --no-startup-id "sleep 5s && blueberry-tray"
