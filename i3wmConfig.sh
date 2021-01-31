@@ -85,6 +85,9 @@ sudo cp pacman.conf /etc/
 # Config samba
 sudo cp smb.conf /etc/samba/
 
+# Configure default browser
+xdg-settings set default-web-browser firefox.desktop
+
 sleep 1
 
 echo "Installing go tools"
