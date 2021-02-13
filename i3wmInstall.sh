@@ -193,6 +193,7 @@ sudo pacman -S --noconfirm --needed task                    # Gestor de tareas
 sudo pacman -S --noconfirm --needed keepassxc               # Gestor de contraseñas
 sudo pacman -S --noconfirm --needed samba                   # Samba
 sudo pacman -S --noconfirm --needed ntfs-3g                 # Conectar usb con sistema de ficheros ntfs
+sudo pacman -S --noconfirm --needed notify-osd              # Para poder enviar y recibir notificaciones
 
 ###############################################################################################
 
