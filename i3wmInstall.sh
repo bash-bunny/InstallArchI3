@@ -128,7 +128,7 @@ sudo pacman -S --noconfirm --needed tor torsocks
 sudo pacman -S --noconfirm --needed torbrowser-launcher
 sudo pacman -S --noconfirm --needed nyx                     # Nyx is a command-line monitor for Tor. With this you can get detailed real-time information about your relay such as bandwidth usage, connections, logs, and much more.
 sudo pacman -S --noconfirm --needed thunderbird             # Gestor de correo
-sudo pacman -S --noconfirm --needed pidgin                  # For social media
+# sudo pacman -S --noconfirm --needed pidgin                  # For social media
 
 echo "Installing category Multimedia"
 
@@ -192,6 +192,7 @@ sudo pacman -S --noconfirm --needed sysstat                 # sysstat es una col
 sudo pacman -S --noconfirm --needed task                    # Gestor de tareas
 sudo pacman -S --noconfirm --needed keepassxc               # Gestor de contraseñas
 sudo pacman -S --noconfirm --needed samba                   # Samba
+sudo pacman -S --noconfirm --needed ntfs-3g                 # Conectar usb con sistema de ficheros ntfs
 
 ###############################################################################################
 
