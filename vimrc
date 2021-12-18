@@ -176,3 +176,6 @@ set nocompatible
 
 " For opening vim on the last known position
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif 	" Set the cursor to the last position know
+
+" For the tmux color scheme dont change my vim
+set background=dark
